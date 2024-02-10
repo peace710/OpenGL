@@ -1,0 +1,3 @@
+"D:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\OpenGlInit.dir/objects.a
+E:\vsproject\vs\mingw64\bin\ar.exe qc CMakeFiles\OpenGlInit.dir/objects.a @CMakeFiles\OpenGlInit.dir\objects1.rsp
+E:\vsproject\vs\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\OpenGlInit.dir/objects.a -Wl,--no-whole-archive -o OpenGlInit.exe -Wl,--out-implib,libOpenGlInit.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OpenGlInit.dir\linkLibs.rsp

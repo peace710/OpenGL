@@ -1,0 +1,14 @@
+[
+{
+  "directory": "E:/vsproject/workspace/opengl/glapi/build",
+  "command": "E:\\vsproject\\vs\\mingw64\\bin\\gcc.exe  @CMakeFiles/OpenGlInit.dir/includes_C.rsp -g -o CMakeFiles\\OpenGlInit.dir\\src\\glad.c.obj -c E:\\vsproject\\workspace\\opengl\\glapi\\src\\glad.c",
+  "file": "E:/vsproject/workspace/opengl/glapi/src/glad.c",
+  "output": "CMakeFiles/OpenGlInit.dir/src/glad.c.obj"
+},
+{
+  "directory": "E:/vsproject/workspace/opengl/glapi/build",
+  "command": "E:\\vsproject\\vs\\mingw64\\bin\\g++.exe  @CMakeFiles/OpenGlInit.dir/includes_CXX.rsp -g -o CMakeFiles\\OpenGlInit.dir\\src\\opengl.cpp.obj -c E:\\vsproject\\workspace\\opengl\\glapi\\src\\opengl.cpp",
+  "file": "E:/vsproject/workspace/opengl/glapi/src/opengl.cpp",
+  "output": "CMakeFiles/OpenGlInit.dir/src/opengl.cpp.obj"
+}
+]
