@@ -22,6 +22,7 @@ int main(){
 
     glfwMakeContextCurrent(window);
 
+    //使用glad加载所有当前版本的OpenGL函数
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
         std::cout << "gladLoadGLLoader faiulre" << std::endl;
         return 0;
