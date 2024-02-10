@@ -40,6 +40,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     }
 }
 
+void mouse_callback(GLFWwindow* window, int button, int action, int mods){
+    std::cout << "mouse_callback:" << button << "," << action << "," << mods << std::endl;
+}
+
 int main(void)
 {
     glfwInit();
@@ -59,6 +63,8 @@ int main(void)
     glfwSetFramebufferSizeCallback(window,framebuffer_size_callback);
     //注册窗体按键响应回调
     glfwSetKeyCallback(window,key_callback);
+    //注册窗体鼠标响应回调
+    glfwSetMouseButtonCallback(window,mouse_callback);
 
 
     while (!glfwWindowShouldClose(window)){
