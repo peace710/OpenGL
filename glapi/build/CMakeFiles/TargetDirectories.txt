@@ -1,3 +1,0 @@
-E:/vsproject/workspace/opengl/glapi/build/CMakeFiles/OpenGlInit.dir
-E:/vsproject/workspace/opengl/glapi/build/CMakeFiles/edit_cache.dir
-E:/vsproject/workspace/opengl/glapi/build/CMakeFiles/rebuild_cache.dir
