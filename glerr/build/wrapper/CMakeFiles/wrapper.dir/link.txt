@@ -1,0 +1,2 @@
+E:\vsproject\vs\mingw64\bin\ar.exe qc libwrapper.a CMakeFiles/wrapper.dir/checkError.cpp.obj
+E:\vsproject\vs\mingw64\bin\ranlib.exe libwrapper.a

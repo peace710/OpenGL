@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "include/wrapper",
+					"jsonFile" : "directory-include.wrapper-Debug-c01d4c1a6f655765e725.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "include/wrapper",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "OpenGlErr",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OpenGlErr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OpenGlErr-Debug-49e574c87aee0a36f8df.json",
+					"name" : "OpenGlErr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "wrapper::@51db3bee6e6915f96c36",
+					"jsonFile" : "target-wrapper-Debug-da344c4090173529b12c.json",
+					"name" : "wrapper",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/vsproject/workspace/opengl/glerr/build",
+		"source" : "E:/vsproject/workspace/opengl/glerr"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
