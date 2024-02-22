@@ -1,3 +1,0 @@
-"D:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\OpenGlErr.dir/objects.a
-E:\vsproject\vs\mingw64\bin\ar.exe qc CMakeFiles\OpenGlErr.dir/objects.a @CMakeFiles\OpenGlErr.dir\objects1.rsp
-E:\vsproject\vs\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\OpenGlErr.dir/objects.a -Wl,--no-whole-archive -o OpenGlErr.exe -Wl,--out-implib,libOpenGlErr.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OpenGlErr.dir\linkLibs.rsp
