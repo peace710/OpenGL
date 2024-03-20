@@ -90,6 +90,33 @@ void prepareInterLeaveBuffer(){
     GL_CALL(glBindVertexArray(0));
 }
 
+void prepareVAOForGlTriangles(){
+    float positons[] = {
+        -0.5f,-0.5f,0.0f,
+        0.5f,-0.5f,0.0f,
+        0.0f,0.5f,0.0f,
+        0.5f,0.5f,0.0f,
+        0.8f,0.8f,0.0f,
+        0.8f,0.0f,0.0f
+    };
+
+    GLuint posVbo;
+    glGenBuffers(1,&posVbo);
+    
+    glBindBuffer(GL_ARRAY_BUFFER,posVbo);
+    glBufferData(GL_ARRAY_BUFFER,sizeof(positons),positons,GL_STATIC_DRAW);
+
+    glGenVertexArrays(1,&vao);
+    glBindVertexArray(vao);
+
+    glBindBuffer(GL_ARRAY_BUFFER,posVbo);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,3 * sizeof(float),(void*)0);
+
+    glBindVertexArray(0);
+
+}
+
 void prepareShader(){
     const char* vertexShaderSource = 
     "#version 460 core\n"
@@ -171,7 +198,10 @@ void render(){
     //绑定绘制的vao
     glBindVertexArray(vao);
     //执行绘制操作
-    glDrawArrays(GL_TRIANGLES,0,3);
+    // glDrawArrays(GL_TRIANGLES,0,3);
+    // glDrawArrays(GL_TRIANGLES,0,6);
+    // glDrawArrays(GL_TRIANGLE_FAN,0,6);
+    glDrawArrays(GL_TRIANGLE_STRIP,0,6);
 }
 
 int main(){
@@ -188,7 +218,9 @@ int main(){
 
     prepareShader();
     // prepareSingleBuffer();
-    prepareInterLeaveBuffer();
+    // prepareInterLeaveBuffer();
+
+    prepareVAOForGlTriangles();
 
     while (sApp->update()){
        render();
